@@ -1,0 +1,35 @@
+.button {
+    height: 48px;
+    background-color: #362455;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #ffffff;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.small {
+    padding: 8px 17px;
+    font-size: 14px;
+    min-width: 112px;
+  }
+}
+  input:-webkit-autofill {
+    animation-name: onAutoFillStart;
+  }
+  @keyframes onAutoFillStart {
+    from {
+      top: 0;
+    }
+  
+    to {
+      top: 200px;
+    }
+  }
+  

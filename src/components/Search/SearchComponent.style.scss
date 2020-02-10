@@ -1,0 +1,35 @@
+.searchComponent{
+    background: url(../../assets/images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    &__leftContainer{
+        width:281px;
+        background-color: #f5f9ff;
+        padding:32px 0px;
+        height:100vh;
+    }
+    &__search{
+        padding: 0px 24px;
+    }
+    input{
+        box-sizing: border-box;	
+        height: 48px;	
+        width: 100%;	
+        border: 1px solid #C6CEDA;	
+        border-radius: 4px;	
+        background-color: #FFFFFF;
+        font-size: 16px;	
+        line-height: 22px;
+        padding: 12px 30px 12px 12px;
+    }
+
+
+    &__img{
+        position: absolute;
+        left: 228px;
+        top: 45px;
+    }
+}

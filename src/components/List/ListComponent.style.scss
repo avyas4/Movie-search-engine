@@ -1,0 +1,48 @@
+.listComponent{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    &__li{
+        cursor: pointer;
+        h4{
+            color: #333333;	
+            font-family: Lato;	
+            font-size: 16px;	
+            letter-spacing: -0.15px;	
+            line-height: 22px;
+            font-weight: normal;
+            width:200px;
+        }
+        p{
+            font-size: 12px;	
+            font-weight: 900;	
+            letter-spacing: 0.2px;	
+            line-height: 18px;
+        }
+    }
+    &__listContainer{
+        padding:12px 24px;
+        border-bottom:1px solid  #C6CEDA; 
+        cursor: pointer;
+         &:hover{
+            background-color: #E6EBF2;
+            border-left: 4px solid #006ADD;
+        }
+    }
+    .active{
+        background-color: #E6EBF2;
+        border-left: 4px solid #006ADD;
+        h4{
+           font-weight: bold;
+        }
+    }
+}
+
+.listComponentContainer{
+    padding-top:32px;
+    position: absolute;
+    top: 80px;
+    width: 281px;
+}

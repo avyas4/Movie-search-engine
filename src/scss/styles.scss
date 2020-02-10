@@ -1,0 +1,29 @@
+@import './atoms/_colour';
+@import './atoms/_button';
+@import './atoms/_grid';
+
+// typography
+@import './core/_typography';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 14px;
+  @return #{$remSize}rem;
+}
+
+@mixin rem($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+ul {
+  list-style-type: none;
+}

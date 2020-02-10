@@ -1,0 +1,44 @@
+.column-right {
+  flex-basis: 60%;
+}
+.movieDetails {
+  font-size: 16px;
+  color: #333333;
+
+  article {
+    background: #fff;
+    padding: 56px 108px 56px 56px;
+    -webkit-box-shadow: -4px 2px 27px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 2px 27px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 2px 27px -11px rgba(0, 0, 0, 0.75);
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    ul {
+      padding-top: 56px;
+      padding-left: 0;
+      margin: 0;
+      li {
+        padding-bottom: 24px;
+      }
+    }
+  }
+  img {
+    padding-top: 20px;
+  }
+  &__content {
+    letter-spacing: -0.15px;
+    line-height: 22px;
+    padding-top: 32px;
+  }
+  &__header {
+    p {
+      color: #9b9b9b;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.2px;
+      line-height: 16px;
+      text-transform: uppercase;
+      padding-top: 16px;
+    }
+  }
+}
