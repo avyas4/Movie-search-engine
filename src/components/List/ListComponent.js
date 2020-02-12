@@ -34,7 +34,7 @@ const ListComponent = ({ data, searchTerm }) => {
     *  Render list 
     */
     const NavLink = ({ imdbID, Title, Year, isActive, onClick }) => (
-        <div role="button" tabIndex={imdbID} onKeyDown={() => { }} onClick={useCallback((event) => event.preventDefault(), onClick(imdbID), [imdbID])} className={`listComponent__listContainer ${isActive ? 'active' : ''}`}>
+        <div role="button" tabIndex={imdbID} onKeyDown={() => { }} onClick={useCallback(() => onClick(imdbID), [imdbID])} className={`listComponent__listContainer ${isActive ? 'active' : ''}`}>
             <h4 className="listComponent__title">{`${Title} ${isActive ? '- active' : ''} `}</h4>
             <p>{Year}</p>
         </div>
@@ -50,7 +50,7 @@ const ListComponent = ({ data, searchTerm }) => {
                             tabIndex={object.imdbID}
                             className="listComponent__li"
                             role='presentation'
-                            onClick={(event) => { event.preventDefault(); getTitle(object.Title); }} onKeyDown={() => { }}>
+                            onClick={() => { getTitle(object.Title); }} onKeyDown={() => { }}>
                             <NavLink
                                 {...object}
                                 onClick={setActive}
